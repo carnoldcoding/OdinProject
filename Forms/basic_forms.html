@@ -11,12 +11,17 @@
     <!--
         GET and POST are the most common form methods. 
         Where POST sends data, and GET retrieves data.
+
+        ID's are used with labels to give input boxes a label
+        (~IMPORTANT~)
+            name attributes are used to tell the backend what data was submitted 
     -->
     <div class="container">
         <div class="wrapper">
             <form method="post">
                 <Label for="inputUser" class="label">Username:</Label>
-                <input type="text" id="inputUser">
+                <input type="text" id="inputUser" 
+                name="username">
             </form>
         </div>
     </div>

@@ -1,3 +1,10 @@
+:root{
+    --primary: rgb(43, 42, 42);
+    --secondary: rgb(77, 77, 77);
+    --accent: white;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +14,7 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: rgb(23, 2, 73)
+    background: var(--primary);
 }
 
 .wrapper{
