@@ -1,0 +1,10 @@
+==Lowkey Commands==
+
+.git remote -v
+    This command will display the URL of your repository on Github.
+
+==Terms==
+
+origin
+    The typical name for your remote connection. The default and the convention
+    for the local remote.
