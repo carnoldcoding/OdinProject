@@ -1,0 +1,10 @@
+~Client/Server Interaction~
+    Client -> Server
+    Client <- Server
+
+    Clients are devices that are being used to connect to a server.
+    Servers are computers that store webpages, sites, or apps.
+
+    The client sends an HTTP request to the server asking for a copy of the site
+    , and the server sends a response. This is done over TCP/IP. The site is broken
+    down into packets and then sent over the network to the client.

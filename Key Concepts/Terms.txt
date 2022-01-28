@@ -1,0 +1,34 @@
+~DOM~
+    The Document Object Model is a tree structure of objects. The objects being
+    tags in HTML <div /> <nav />, etc. These objects are nodes that interact with
+    each other keeping in mind the restrictions of their position on the DOM.
+
+~DNS~
+    A Domain Naming System Server is a map of IP addresses and Domain Names. Like
+    an address book.
+
+~HTTP~
+    Hypertext Transfer Protocol is a set of rules that define a language with which
+    clients speak to servers.
+
+~TCP/IP~
+    Transmission Control Protocol, Internet Protocol, are rules that determine how data
+    is transferred across the web.
+
+~Packets~
+    Small chunks of data that are easily routed and rerouted between the server
+    and client. Data is sent this way to avoid potential corruption/crashing with
+    huge chunks of data. Huge chunks of data are harder to reroute, and would cause
+    congestion in the network.
+
+~ISP~
+    Internet Service Provider, allows access to the internet.
+
+~Router~
+    Routers are small computers that simply ensure the HTTP request sent from 
+    the client reach the correct server.
+
+~Modem~
+    (I don't really understand this)
+    Modems transfer client data into data parseable by the telephone infrastructure,
+    and vice versa.
