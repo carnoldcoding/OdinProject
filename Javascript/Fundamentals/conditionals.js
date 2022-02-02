@@ -14,6 +14,12 @@
     Nullish Coalescing Operator ??
         The ?? operator is a binary operator that returns whichever operator is defined.
         Commonly used as a default value for a variable that has the opportunity to be undefined
+    
+    Switch Statements
+        Very similar to if/else if/else statements. Switch statements deal with multiple
+            cases and execute blocks of code pertaining specifically to them.
+        Switch statements also use strict equality, which means that typing will not
+            implicitly change during comparisons.
 */
 
 let a = 5;
@@ -44,3 +50,15 @@ let defined = "defined";
 let undefined;
 
 console.log(defined ?? undefined);
+
+//Switch statements need breaks otherwise the cases after a confirmation will also run
+let n = 5;
+
+switch(n){
+    case 5:
+        console.log("N is equal to 5");
+        break;
+    case 1:
+        console.log("N is equal to 1");
+        break;
+    }
