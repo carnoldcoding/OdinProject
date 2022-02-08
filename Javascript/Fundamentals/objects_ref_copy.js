@@ -1,4 +1,4 @@
-/*
+s/*
     ==Objects Continued==
 
     Variables that hold objects actually hold references to that objects
