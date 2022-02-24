@@ -59,3 +59,9 @@ rows: for(let x=0;x<3;x++){
         if(x==2) break rows;
     }
 }
+
+/* forEach loops make a function callback on every element in an array */
+const array = [1,2,3,4,5];
+array.forEach(element => {
+    console.log(element+1);
+});
