@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #333;
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 100%;
+    transition: all .2s ease;
+}
+
+.header:hover{
+    cursor: pointer;
+}
+
+
+.active{
+    color: lightpink;
+}
