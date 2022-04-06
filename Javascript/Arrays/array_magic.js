@@ -1,5 +1,8 @@
 /*
 * The purpose of this js file is to display the functionality of specific array methods.
+Useful Links:
+    https://www.youtube.com/watch?v=HB1ZC7czKRs
+    https://www.youtube.com/watch?v=QNmRfyNg1lw
 */
 
 //Filter
@@ -46,3 +49,4 @@ const total = numbers.reduce((total, number)=>{
 }, 0);
 
 console.log(total);
+
