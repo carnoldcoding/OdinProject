@@ -25,7 +25,9 @@
         Labels are used in conjunction with form controls to let users know what
         they're supposed to do in each form. The 'for' attribute uses the id of the 
         form control it belongs to. -->
-        <form action="./form_action.html" method="post">
+
+        <!-- httpbin.org is a great tool for testing your form actions -->
+        <form action="http://httpbin.org/post" method="post">
             <label for="firstName">Enter Name:</label>
             <input type="text" name="firstName" id="firstName" placeholder="..Cameron">
         </form>
