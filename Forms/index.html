@@ -4,34 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--
-        GET and POST are the most common form methods. 
-        Where POST sends data, and GET retrieves data.
-
-        ID's are used with labels to give input boxes a label
-        (~IMPORTANT~)
-            name attributes are used to tell the backend what data was submitted 
-    -->
     <div class="container">
-        <div class="wrapper">
-            <div class="form-wrapper">
-                <form method="post">
-                    <Label for="user-input" class="label">Username:</Label>
-                    <input type="text" id="user-input" 
-                    name="username">
-                </form>
-                <div class="button" id="display-button">Display</div>
-            </div>
+        <!-- The action attribute on a form takes a url value which dictates where to send
+        the data to be processed.-->
 
-            <div class="display-wrapper">
-                <div class="display" id="display"></div>
-            </div>
-        </div>
+        <!-- The method attribute tells the browser which HTTP the browser should use
+        when submitting the form.
+
+        GET and POST are the two most common forms currently used. Where GET is used to
+        retrieve data from a server, and POST is used to alter data in the server.
+        -->
+
+        <!-- Form Controls are used to allow the user to interact with the form element.
+        These can be text boxes, buttons, checkmarks, almost anything. 
+    
+        Labels are used in conjunction with form controls to let users know what
+        they're supposed to do in each form. The 'for' attribute uses the id of the 
+        form control it belongs to. -->
+        <form action="./form_action.html" method="post">
+            <label for="firstName">Enter Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="..Cameron">
+        </form>
+
     </div>
 </body>
-<script type="text/javascript" src="./basic_forms.js"></script>
+<script src="basic_forms.js"></script>
 </html>
