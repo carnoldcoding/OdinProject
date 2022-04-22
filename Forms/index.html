@@ -24,13 +24,92 @@
     
         Labels are used in conjunction with form controls to let users know what
         they're supposed to do in each form. The 'for' attribute uses the id of the 
-        form control it belongs to. -->
+        form control it belongs to. 
+        
+        Submit buttons are special buttons that submit the data from the form
+        they are contained within.
+
+        Reset buttons are also special, and they reset all information placed into
+        the form that encloses them.
+    -->
 
         <!-- httpbin.org is a great tool for testing your form actions -->
         <form action="http://httpbin.org/post" method="post">
             <label for="firstName">Enter Name:</label>
             <input type="text" name="firstName" id="firstName" placeholder="..Cameron">
+            <button type="submit" class="submit">SUBMIT</button>
+            <button type="reset" class="submit second">RESET</button>
         </form>
+
+        <!-- Form Controls don't need to be used inside of forms. Weird I know lol.
+            But you can have a form input outside of a form tag, and then use that data
+            elsewhere. -->
+        <div class="favorite-color">
+            <label for="color">Favorite Color: </label>
+            <input type="text" name="color" id="color" placeholder="..blue">
+            <div class="submit">SUBMIT</div>
+        </div>
+        <h2 class="color-display"></h2>
+
+        <!-- There are many different types of input values. Here is a list.
+                *Email - For emails. Runs validation on input
+                *TextArea - For comments/posts. Allows for larger bodies of text
+                *Text - For small text inputs, names.
+                *Number - For numbers only
+                *Password - For passwords, displayed with asterisks to the user.
+                *Date - For dates, formatted correctly.
+            To name a few.
+        -->
+        <!-- Selection Elements. Selection Elements are methods of restricting user
+            input by giving them a predetermined list of values to choose from. 
+            
+            The value attribute is required because it is used when the server reads the selection.
+            The selected attribute is used to present users with a default selection.
+        -->
+        <select name="food">
+            <option value="burger">Burger</option>
+            <option value="taco" selected>Taco</option>
+            <option value="spaghetti">Spaghetti</option>
+        </select>
+
+        <!--
+            Optgroups is an abbreviation for "option groups"
+            and they are used to group similar options together in a select dropdown.
+        -->
+        <select name="fashion" id="fashion">
+            <optgroup label="shirts">
+                <option value="nike">Nike Shirt</option>
+                <option value="adidas">Adidas Shirt</option>
+            </optgroup>
+            <optgroup label="pants">
+                <option value="levis">Levis</option>
+            </optgroup>
+        </select>
+
+        <!--
+            Other Types
+            Checkboxes and Radio buttons are alternate types of inputs.
+            Checkboxes allow for multiple value selection, whereas radio buttons
+            only allow one selection per input.
+        -->
+
+        <!--Fieldsets are used to group related inputs. Legends are headers for 
+        fieldset groups.-->
+
+        <fieldset class="fieldset">
+            <legend>Contact Details</legend>
+          
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number">
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+
+        
 
     </div>
 </body>
