@@ -4,12 +4,13 @@
 //General
 $background: rgb(12, 12, 12);
 $standard-font: 'Roboto', sans-serif;
-$standard-font-size: 2rem;
+$standard-font-size: clamp(1.25rem, 2vw, 2rem);
 $font-color: white;
 $font-accent: magenta;
 
 //Form
-$form-background: rgb(32, 32, 32);
+$input-background: rgb(32, 32, 32);
+$input-width: clamp(200px, 20vw, 500px);
 
 //CSS Reset
 *{
@@ -27,10 +28,29 @@ $form-background: rgb(32, 32, 32);
     background: $background;
 
     form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
         input{
             color: $font-color;
             font-size: $standard-font-size;
-            background: $form-background;
+            background: $input-background;
+            width: $input-width;
+            border: none;
+            padding: 10px;
+            border-radius: .5rem;
+        }
+        button{
+            border-radius: 2rem;
+            font-family: $standard-font;
+            font-size: $standard-font-size;
+            border: none;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            grid-template-columns: 1fr;
         }
     }
 }
