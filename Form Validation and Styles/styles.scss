@@ -1,0 +1,36 @@
+//Imports
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+//General
+$background: rgb(12, 12, 12);
+$standard-font: 'Roboto', sans-serif;
+$standard-font-size: 2rem;
+$font-color: white;
+$font-accent: magenta;
+
+//Form
+$form-background: rgb(32, 32, 32);
+
+//CSS Reset
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    background: $background;
+
+    form{
+        input{
+            color: $font-color;
+            font-size: $standard-font-size;
+            background: $form-background;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(12, 12, 12);
+}
+.container form input {
+  color: white;
+  font-size: 2rem;
+  background: rgb(32, 32, 32);
+}
+
+/*# sourceMappingURL=styles.css.map */
