@@ -26,6 +26,12 @@
   padding: 10px;
   border-radius: 0.5rem;
 }
+.container form input:invalid {
+  border: 1px solid red;
+}
+.container form input:valid {
+  border: 1px solid green;
+}
 .container form button {
   border-radius: 2rem;
   font-family: "Roboto", sans-serif;
