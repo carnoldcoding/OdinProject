@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container{
+    height: 100vh;
+}
+
+.grid{
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .grid-item{
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        &.medium{
+        }
+        .large{
+
+        }
+    }
+}
