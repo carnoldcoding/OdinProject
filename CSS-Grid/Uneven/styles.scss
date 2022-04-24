@@ -16,11 +16,10 @@
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
-    width: 10%;
 
     .grid-item{
         height: 100px;
-        width: auto;
+        width: 100px;
         border: 2px solid black;
         &.medium{
             grid-column: span 2;
