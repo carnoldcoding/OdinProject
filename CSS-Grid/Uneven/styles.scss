@@ -6,20 +6,27 @@
 
 .container{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid{
-    display: inline-grid;
+    display: grid;
+    grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
+    width: 10%;
 
     .grid-item{
         height: 100px;
-        width: 100px;
+        width: auto;
         border: 2px solid black;
         &.medium{
+            grid-column: span 2;
         }
-        .large{
-
+        &.large{
+            grid-column: span 4;
         }
     }
 }

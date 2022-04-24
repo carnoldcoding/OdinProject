@@ -6,16 +6,28 @@
 
 .container {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
-  display: inline-grid;
+  display: grid;
+  grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
+  width: 10%;
 }
 .grid .grid-item {
   height: 100px;
-  width: 100px;
+  width: auto;
   border: 2px solid black;
+}
+.grid .grid-item.medium {
+  grid-column: span 2;
+}
+.grid .grid-item.large {
+  grid-column: span 4;
 }
 
 /*# sourceMappingURL=styles.css.map */
