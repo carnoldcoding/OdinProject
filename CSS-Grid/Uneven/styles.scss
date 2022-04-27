@@ -5,27 +5,51 @@
 }
 
 .container{
-    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
+    justify-content: center;
+    height: 100vh;
+    gap: 5rem;
 
-.grid{
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+    .grid{
+        
+        display: inline-grid;
+        grid-template-columns: repeat(4, 50px);
+        grid-template-rows: repeat(4, 50px);
+        gap: .5rem;
 
-    .grid-item{
-        height: 100px;
-        width: 100px;
-        border: 2px solid black;
-        &.medium{
-            grid-column: span 2;
+        .grid-item{
+            border: 1px solid black;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+                box-shadow: 0px 2px 2px 1px rgb(102, 102, 102);
+                transition: all .2s ease;
+            }
+
+            &.medium{
+                grid-column: span 2;
+            }
+            &.large{
+                grid-column: span 4;
+            }
         }
-        &.large{
-            grid-column: span 4;
+    }
+
+    .grid-fr{
+        display: inline-grid;
+        width: 50%;
+        //Auto-fit allows for the extra space left from a wider viewport to be
+        //filled by stretching the cells in the grid
+        //Auto-fill prevents the cells from stretching past their defined range
+        
+        //grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+        gap: .5rem;
+        .grid-fr-item{
+            border: 1px solid black;
+            height: 50px;
         }
     }
 }
